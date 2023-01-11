@@ -29,6 +29,7 @@
     <script src="{{ asset('assets/js/animation.js') }}" defer></script>
     <script src="{{ asset('assets/js/imagesloaded.js') }}" defer></script>
     <script src="{{ asset('assets/js/custom.js') }}" defer></script>
+    <script src="{{ asset('assets/js/index.global.min.js') }}" defer></script>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                             <li><a href="/category" class="{{ Route::is('category') ? 'active' : '' }}">Category</a>
                             </li>
                             <li><a href="/listing" class="{{ Route::is('listing') ? 'active' : '' }}">Listing</a></li>
-                            <li><a href="/contact" class="{{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
+                            <li><a href="/calendar" class="{{ Route::is('calendar') ? 'active' : '' }}">Calendar</a>
                             </li>
                             @guest
                                 @if (Route::is('login'))

@@ -21,9 +21,9 @@ Route::get('/category', function () {
     return view('category');
 })->name('category');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/calendar', function () {
+    return view('calendar');
+})->name('calendar');
 
 Route::get('/listing', function () {
     return view('listing');
