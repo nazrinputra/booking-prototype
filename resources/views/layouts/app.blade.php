@@ -18,7 +18,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/templatemo-plot-listing.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/templatemo.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animated.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
 
@@ -55,41 +55,47 @@
                         <a href="/" class="logo">
                         </a>
                         <!-- ***** Logo End ***** -->
-                        @auth
-                            <!-- ***** Menu Start ***** -->
-                            <ul class="nav">
-                                <li><a href="/" class="{{ Route::is('welcome') ? 'active' : '' }}">Home</a></li>
-                                <li><a href="/category" class="{{ Route::is('category') ? 'active' : '' }}">Category</a>
-                                </li>
-                                <li><a href="/listing" class="{{ Route::is('listing') ? 'active' : '' }}">Listing</a></li>
-                                <li><a href="/contact" class="{{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
-                                </li>
-                                <li>
-                                    <div class="main-white-button"><a href="/login">Login</a></div>
-                                </li>
-                            </ul>
-                            <a class='menu-trigger'>
-                                <span>Menu</span>
-                            </a>
-                            <!-- ***** Menu End ***** -->
-                        @else
-                            <!-- ***** Menu Start ***** -->
-                            <ul class="nav">
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            @auth
+                                <li><a href="/home" class="{{ Route::is('home') ? 'active' : '' }}">Home</a></li>
+                            @endauth
+                            <li><a href="/category" class="{{ Route::is('category') ? 'active' : '' }}">Category</a>
+                            </li>
+                            <li><a href="/listing" class="{{ Route::is('listing') ? 'active' : '' }}">Listing</a></li>
+                            <li><a href="/contact" class="{{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
+                            </li>
+                            @guest
                                 @if (Route::is('login'))
                                     <li>
-                                        <div class="main-white-button"><a href="/register">Register</a></div>
+                                        <div class="main-white-button"><a href="/register">REGISTER</a></div>
                                     </li>
                                 @else
                                     <li>
-                                        <div class="main-white-button"><a href="/login">Login</a></div>
+                                        <div class="main-white-button"><a href="/login">LOGIN</a></div>
                                     </li>
                                 @endif
-                            </ul>
-                            <a class='menu-trigger'>
-                                <span>Menu</span>
-                            </a>
-                            <!-- ***** Menu End ***** -->
-                        @endauth
+                            @else
+                                <li>
+                                    <div class="main-white-button">
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            LOGOUT
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                            @endguest
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
             </div>
@@ -103,7 +109,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="about">
+                    <div class="about text-center">
                         <div class="logo">
                             <img src="{{ asset('assets/images/black-logo.png') }}" alt="">
                         </div>
@@ -111,14 +117,11 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-us">
-                        <h4>Contact Us</h4>
-                        <p>27th Street of New Town, Digital Villa</p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="#">010-020-0340</a>
-                            </div>
-                            <div class="col-lg-6">
-                                <a href="#">090-080-0760</a>
+                        <div class="text-center">
+                            <h4>Contact Us</h4>
+                            <p>Selangor, Malaysia</p>
+                            <div>
+                                <a href="#">012-345 6789</a>
                             </div>
                         </div>
                     </div>
