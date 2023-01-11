@@ -1,84 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <title>Plotlist - Listing HTML5 Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js" defer></script>
-    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-    <script src="assets/js/owl-carousel.js" defer></script>
-    <script src="assets/js/animation.js" defer></script>
-    <script src="assets/js/imagesloaded.js" defer></script>
-    <script src="assets/js/custom.js" defer></script>
-
-</head>
-
-<body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="/" class="logo">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/category" class="active">Category</a></li>
-                            <li><a href="/listing">Listing</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                            <li>
-                                <div class="main-white-button"><a href="/login">Login</a></div>
-                            </li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
+@section('content')
     <div class="page-heading">
         <div class="container">
             <div class="row">
@@ -91,8 +13,6 @@
             </div>
         </div>
     </div>
-
-
 
     <div class="category-post">
         <div class="container">
@@ -247,8 +167,8 @@
                                                                     </div>
                                                                     <div class="col-lg-6">
                                                                         <div class="main-white-button">
-                                                                            <a href="#"><i
-                                                                                    class="fa fa-plus"></i> Check Our
+                                                                            <a href="#"><i class="fa fa-plus"></i>
+                                                                                Check Our
                                                                                 Listings</a>
                                                                         </div>
                                                                     </div>
@@ -331,8 +251,8 @@
                                                                     </div>
                                                                     <div class="col-lg-6">
                                                                         <div class="main-white-button">
-                                                                            <a href="#"><i
-                                                                                    class="fa fa-plus"></i> Check Our
+                                                                            <a href="#"><i class="fa fa-plus"></i>
+                                                                                Check Our
                                                                                 Listings</a>
                                                                         </div>
                                                                     </div>
@@ -412,8 +332,8 @@
                                                                     </div>
                                                                     <div class="col-lg-6">
                                                                         <div class="main-white-button">
-                                                                            <a href="#"><i
-                                                                                    class="fa fa-plus"></i> Check Our
+                                                                            <a href="#"><i class="fa fa-plus"></i>
+                                                                                Check Our
                                                                                 Listings</a>
                                                                         </div>
                                                                     </div>
@@ -493,8 +413,8 @@
                                                                     </div>
                                                                     <div class="col-lg-6">
                                                                         <div class="main-white-button">
-                                                                            <a href="#"><i
-                                                                                    class="fa fa-plus"></i> Check Our
+                                                                            <a href="#"><i class="fa fa-plus"></i>
+                                                                                Check Our
                                                                                 Listings</a>
                                                                         </div>
                                                                     </div>
@@ -565,69 +485,4 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="about">
-                        <div class="logo">
-                            <img src="assets/images/black-logo.png" alt="">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adicingi elit, sed do eiusmod tempor incididunt ut et
-                            dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="helpful-links">
-                        <h4>Helpful Links</h4>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><a href="#">Categories</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Listing</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Awards</a></li>
-                                    <li><a href="#">Useful Sites</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-us">
-                        <h4>Contact Us</h4>
-                        <p>27th Street of New Town, Digital Villa</p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="#">010-020-0340</a>
-                            </div>
-                            <div class="col-lg-6">
-                                <a href="#">090-080-0760</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
-                            <br>
-                            Design: <a rel="nofollow" href="https://templatemo.com"
-                                title="CSS Templates">TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+@endsection

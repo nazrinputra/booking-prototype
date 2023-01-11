@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -30,11 +29,9 @@
     <script src="{{ asset('assets/js/animation.js') }}" defer></script>
     <script src="{{ asset('assets/js/imagesloaded.js') }}" defer></script>
     <script src="{{ asset('assets/js/custom.js') }}" defer></script>
-
 </head>
 
 <body>
-
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
         <div class="preloader-inner">
@@ -61,10 +58,12 @@
                         @auth
                             <!-- ***** Menu Start ***** -->
                             <ul class="nav">
-                                <li><a href="/" class="active">Home</a></li>
-                                <li><a href="/category">Category</a></li>
-                                <li><a href="/listing">Listing</a></li>
-                                <li><a href="/contact">Contact Us</a></li>
+                                <li><a href="/" class="{{ Route::is('welcome') ? 'active' : '' }}">Home</a></li>
+                                <li><a href="/category" class="{{ Route::is('category') ? 'active' : '' }}">Category</a>
+                                </li>
+                                <li><a href="/listing" class="{{ Route::is('listing') ? 'active' : '' }}">Listing</a></li>
+                                <li><a href="/contact" class="{{ Route::is('contact') ? 'active' : '' }}">Contact Us</a>
+                                </li>
                                 <li>
                                     <div class="main-white-button"><a href="/login">Login</a></div>
                                 </li>
@@ -76,16 +75,11 @@
                         @else
                             <!-- ***** Menu Start ***** -->
                             <ul class="nav">
-                                @if (Route::is('register'))
-                                    <li>
-                                        <div class="main-white-button"><a href="/login">Login</a></div>
-                                    </li>
-                                @elseif (Route::is('login'))
+                                @if (Route::is('login'))
                                     <li>
                                         <div class="main-white-button"><a href="/register">Register</a></div>
                                     </li>
                                 @else
-                                    <li><a href="/register">Register</a></li>
                                     <li>
                                         <div class="main-white-button"><a href="/login">Login</a></div>
                                     </li>
@@ -103,25 +97,40 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <div class="main-banner">
+    @yield('content')
+
+    <footer>
         <div class="container">
             <div class="row">
-                <main class="py-4">
-                    @yield('content')
-                </main>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="sub-footer mt-4 text-center">
-                    <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.</p>
+                <div class="col-lg-6">
+                    <div class="about">
+                        <div class="logo">
+                            <img src="{{ asset('assets/images/black-logo.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-us">
+                        <h4>Contact Us</h4>
+                        <p>27th Street of New Town, Digital Villa</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="#">010-020-0340</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">090-080-0760</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright © {{ date('Y') }} Laravel. All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>
