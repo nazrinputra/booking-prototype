@@ -15,19 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/category', function () {
     return view('category');
-});
+})->name('category');
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 
 Route::get('/listing', function () {
     return view('listing');
-});
+})->name('listing');
 
 Auth::routes();
 
