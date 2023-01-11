@@ -7,8 +7,8 @@
                 <main class="py-4">
                     <div class="col-lg-12">
                         <div class="top-text header-text">
-                            <h6>Over 36,500+ Active Listings</h6>
-                            <h2>Find Nearby Places &amp; Things</h2>
+                            <h6>Ready to get started?</h6>
+                            <h2>Find Rooms</h2>
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -16,15 +16,14 @@
                             <div class="row">
                                 <div class="col-lg-4 align-self-center">
                                     <fieldset>
-                                        <label>Date</label>
                                         <input placeholder="Date" type="date" id="example" class="form-control">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-4 align-self-center">
                                     <fieldset>
                                         <select name="price" class="form-select" aria-label="Default select example"
-                                            id="chooseCategory" onchange="this.form.click()">
-                                            <option value="People" selected>People</option>
+                                            id="chooseCategory">
+                                            <option value="" selected>Choose Room</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>

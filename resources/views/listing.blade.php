@@ -7,7 +7,7 @@
                 <div class="col-lg-8">
                     <div class="top-text header-text">
                         <h6>Check Out Our Listings</h6>
-                        <h2>Item listings of Different Categories</h2>
+                        <h2>Room listings of Different Categories</h2>
                     </div>
                 </div>
             </div>
@@ -27,28 +27,21 @@
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-01.png"
                                                         alt=""></span>
-                                                Single Bed
+                                                Study Room
                                             </div>
                                         </div>
                                         <div>
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-02.png"
                                                         alt=""></span>
-                                                Double Bed
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="thumb">
-                                                <span class="icon"><img src="assets/images/search-icon-03.png"
-                                                        alt=""></span>
-                                                Single Bed &amp; Double Bed
+                                                Meeting Room
                                             </div>
                                         </div>
                                         <div class="last-thumb">
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-04.png"
                                                         alt=""></span>
-                                                2 Double Bed
+                                                Lecture Hall
                                             </div>
                                         </div>
                                     </div>
@@ -860,283 +853,7 @@
                                                 </div>
                                             </div>
                                         </li>
-
-                                        <!-- 4th category 1st page -->
-                                        <li>
-                                            <div>
-                                                <div class="col-lg-12">
-                                                    <div class="owl-carousel owl-listing">
-                                                        <div class="item">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="listing-item">
-                                                                        <div class="left-image">
-                                                                            <a href="#"><img
-                                                                                    src="assets/images/listing-06.jpg"
-                                                                                    alt=""></a>
-                                                                            <div class="hover-content">
-                                                                                <div class="main-white-button">
-                                                                                    <a href="/contact"><i
-                                                                                            class="fa fa-eye"></i>
-                                                                                        Contact Now</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="right-content align-self-center">
-                                                                            <a href="#">
-                                                                                <h4>Traveling Item 1</h4>
-                                                                            </a>
-                                                                            <h6>by: Travel Agent</h6>
-                                                                            <span class="price">
-                                                                                <div class="icon"><img
-                                                                                        src="assets/images/listing-icon-01.png"
-                                                                                        alt=""></div> $400 /
-                                                                                month included tax
-                                                                            </span>
-                                                                            <span class="details">Details: <em>860 sq
-                                                                                    ft</em></span>
-                                                                            <span class="info"><img
-                                                                                    src="assets/images/listing-icon-02.png"
-                                                                                    alt=""> 2 Bedrooms<br><img
-                                                                                    src="assets/images/listing-icon-03.png"
-                                                                                    alt=""> 3 Bathrooms</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="listing-item">
-                                                                        <div class="left-image">
-                                                                            <a href="#"><img
-                                                                                    src="assets/images/listing-04.jpg"
-                                                                                    alt=""></a>
-                                                                            <div class="hover-content">
-                                                                                <div class="main-white-button">
-                                                                                    <a href="/contact"><i
-                                                                                            class="fa fa-eye"></i>
-                                                                                        Contact Now</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="right-content align-self-center">
-                                                                            <a href="#">
-                                                                                <h4>Traveling Item 2</h4>
-                                                                            </a>
-                                                                            <h6>by: Travel Agent</h6>
-                                                                            <span class="price">
-                                                                                <div class="icon"><img
-                                                                                        src="assets/images/listing-icon-01.png"
-                                                                                        alt=""></div> $500 /
-                                                                                month included tax
-                                                                            </span>
-                                                                            <span class="details">Details: <em>860 sq
-                                                                                    ft</em></span>
-                                                                            <span class="info"><img
-                                                                                    src="assets/images/listing-icon-02.png"
-                                                                                    alt=""> 2 Bedrooms<br><img
-                                                                                    src="assets/images/listing-icon-03.png"
-                                                                                    alt=""> 3 Bathrooms</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="listing-item">
-                                                                        <div class="left-image">
-                                                                            <a href="#"><img
-                                                                                    src="assets/images/listing-03.jpg"
-                                                                                    alt=""></a>
-                                                                            <div class="hover-content">
-                                                                                <div class="main-white-button">
-                                                                                    <a href="/contact"><i
-                                                                                            class="fa fa-eye"></i>
-                                                                                        Contact Now</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="right-content align-self-center">
-                                                                            <a href="#">
-                                                                                <h4>Traveling Item 3</h4>
-                                                                            </a>
-                                                                            <h6>by: Travel Agent</h6>
-                                                                            <span class="price">
-                                                                                <div class="icon"><img
-                                                                                        src="assets/images/listing-icon-01.png"
-                                                                                        alt=""></div> $342 /
-                                                                                month included tax
-                                                                            </span>
-                                                                            <span class="details">Details: <em>860 sq
-                                                                                    ft</em></span>
-                                                                            <span class="info"><img
-                                                                                    src="assets/images/listing-icon-02.png"
-                                                                                    alt=""> 2 Bedrooms<br><img
-                                                                                    src="assets/images/listing-icon-03.png"
-                                                                                    alt=""> 3 Bathrooms</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- 4th category 2nd page -->
-                                                        <div class="item">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="listing-item">
-                                                                        <div class="left-image">
-                                                                            <a href="#"><img
-                                                                                    src="assets/images/listing-05.jpg"
-                                                                                    alt=""></a>
-                                                                            <div class="hover-content">
-                                                                                <div class="main-white-button">
-                                                                                    <a href="/contact"><i
-                                                                                            class="fa fa-eye"></i>
-                                                                                        Contact Now</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="right-content align-self-center">
-                                                                            <a href="#">
-                                                                                <h4>4th Category 2nd Page</h4>
-                                                                            </a>
-                                                                            <h6>by: Travel Agent</h6>
-                                                                            <span class="price">
-                                                                                <div class="icon"><img
-                                                                                        src="assets/images/listing-icon-01.png"
-                                                                                        alt=""></div> $268 /
-                                                                                month included tax
-                                                                            </span>
-                                                                            <span class="details">Details: <em>860 sq
-                                                                                    ft</em></span>
-                                                                            <span class="info"><img
-                                                                                    src="assets/images/listing-icon-02.png"
-                                                                                    alt=""> 2 Bedrooms<br><img
-                                                                                    src="assets/images/listing-icon-03.png"
-                                                                                    alt=""> 3 Bathrooms</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="listing-item">
-                                                                        <div class="left-image">
-                                                                            <a href="#"><img
-                                                                                    src="assets/images/listing-06.jpg"
-                                                                                    alt=""></a>
-                                                                            <div class="hover-content">
-                                                                                <div class="main-white-button">
-                                                                                    <a href="/contact"><i
-                                                                                            class="fa fa-eye"></i>
-                                                                                        Contact Now</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="right-content align-self-center">
-                                                                            <a href="#">
-                                                                                <h4>Traveling Item 5</h4>
-                                                                            </a>
-                                                                            <h6>by: Travel Agent</h6>
-                                                                            <span class="price">
-                                                                                <div class="icon"><img
-                                                                                        src="assets/images/listing-icon-01.png"
-                                                                                        alt=""></div> $145 /
-                                                                                month included tax
-                                                                            </span>
-                                                                            <span class="details">Details: <em>860 sq
-                                                                                    ft</em></span>
-                                                                            <span class="info"><img
-                                                                                    src="assets/images/listing-icon-02.png"
-                                                                                    alt=""> 2 Bedrooms<br><img
-                                                                                    src="assets/images/listing-icon-03.png"
-                                                                                    alt=""> 3 Bathrooms</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <div class="listing-item">
-                                                                        <div class="left-image">
-                                                                            <a href="#"><img
-                                                                                    src="assets/images/listing-03.jpg"
-                                                                                    alt=""></a>
-                                                                            <div class="hover-content">
-                                                                                <div class="main-white-button">
-                                                                                    <a href="/contact"><i
-                                                                                            class="fa fa-eye"></i>
-                                                                                        Contact Now</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="right-content align-self-center">
-                                                                            <a href="#">
-                                                                                <h4>Traveling Item 6</h4>
-                                                                            </a>
-                                                                            <h6>by: Travel Agent</h6>
-                                                                            <span class="price">
-                                                                                <div class="icon"><img
-                                                                                        src="assets/images/listing-icon-01.png"
-                                                                                        alt=""></div> $240 /
-                                                                                month included tax
-                                                                            </span>
-                                                                            <span class="details">Details: <em>860 sq
-                                                                                    ft</em></span>
-                                                                            <span class="info"><img
-                                                                                    src="assets/images/listing-icon-02.png"
-                                                                                    alt=""> 2 Bedrooms<br><img
-                                                                                    src="assets/images/listing-icon-03.png"
-                                                                                    alt=""> 3 Bathrooms</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- 4th category 3rd page -->
-                                                        <div class="item">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="listing-item">
-                                                                        <div class="left-image">
-                                                                            <a href="#"><img
-                                                                                    src="assets/images/listing-06.jpg"
-                                                                                    alt=""></a>
-                                                                            <div class="hover-content">
-                                                                                <div class="main-white-button">
-                                                                                    <a href="/contact"><i
-                                                                                            class="fa fa-eye"></i>
-                                                                                        Contact Now</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="right-content align-self-center">
-                                                                            <a href="#">
-                                                                                <h4>4th Category 3rd Page</h4>
-                                                                            </a>
-                                                                            <h6>by: Travel Agent</h6>
-                                                                            <span class="price">
-                                                                                <div class="icon"><img
-                                                                                        src="assets/images/listing-icon-01.png"
-                                                                                        alt=""></div> $360 /
-                                                                                month included tax
-                                                                            </span>
-                                                                            <span class="details">Details: <em>860 sq
-                                                                                    ft</em></span>
-                                                                            <span class="info"><img
-                                                                                    src="assets/images/listing-icon-02.png"
-                                                                                    alt=""> 2 Bedrooms<br><img
-                                                                                    src="assets/images/listing-icon-03.png"
-                                                                                    alt=""> 3 Bathrooms</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-
                                     </ul>
-
                                 </div>
                             </div>
                         </div>
