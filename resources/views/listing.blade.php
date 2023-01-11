@@ -105,28 +105,28 @@
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-01.png"
                                                         alt=""></span>
-                                                Apartments
+                                                Single Bed
                                             </div>
                                         </div>
                                         <div>
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-02.png"
                                                         alt=""></span>
-                                                Food &amp; Life
+                                                Double Bed
                                             </div>
                                         </div>
                                         <div>
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-03.png"
                                                         alt=""></span>
-                                                Cars
+                                                Single Bed &amp; Double Bed
                                             </div>
                                         </div>
                                         <div class="last-thumb">
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-04.png"
                                                         alt=""></span>
-                                                Traveling
+                                                2 Double Bed
                                             </div>
                                         </div>
                                     </div>

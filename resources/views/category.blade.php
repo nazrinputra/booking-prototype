@@ -107,7 +107,7 @@
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-01.png"
                                                         alt="">
-                                                    <h4>Apartments</h4>
+                                                    <h4>Single Bed</h4>
                                                 </span>
                                             </div>
                                         </div>
@@ -115,7 +115,7 @@
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-02.png"
                                                         alt="">
-                                                    <h4>Food &amp; Life</h4>
+                                                    <h4>Double Bed</h4>
                                                 </span>
                                             </div>
                                         </div>
@@ -123,7 +123,7 @@
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-03.png"
                                                         alt="">
-                                                    <h4>Cars</h4>
+                                                    <h4>Single Bed &amp; Double Bed</h4>
                                                 </span>
                                             </div>
                                         </div>
@@ -131,7 +131,7 @@
                                             <div class="thumb">
                                                 <span class="icon"><img src="assets/images/search-icon-04.png"
                                                         alt="">
-                                                    <h4>Shopping</h4>
+                                                    <h4>2 Double Bed</h4>
                                                 </span>
                                             </div>
                                         </div>
@@ -159,7 +159,7 @@
                                                                             <span class="icon"><img
                                                                                     src="assets/images/search-icon-01.png"
                                                                                     alt="">
-                                                                                <h4>Apartments</h4>
+                                                                                <h4>Single Bed</h4>
                                                                             </span>
                                                                         </div>
                                                                     </div>
@@ -241,7 +241,7 @@
                                                                             <span class="icon"><img
                                                                                     src="assets/images/search-icon-02.png"
                                                                                     alt="">
-                                                                                <h4>Food &amp; Life</h4>
+                                                                                <h4>Double Bed</h4>
                                                                             </span>
                                                                         </div>
                                                                     </div>
@@ -325,7 +325,7 @@
                                                                             <span class="icon"><img
                                                                                     src="assets/images/search-icon-03.png"
                                                                                     alt="">
-                                                                                <h4>Cars</h4>
+                                                                                <h4>Single Bed &amp; Double Bed</h4>
                                                                             </span>
                                                                         </div>
                                                                     </div>
@@ -406,7 +406,7 @@
                                                                             <span class="icon"><img
                                                                                     src="assets/images/search-icon-04.png"
                                                                                     alt="">
-                                                                                <h4>Shopping</h4>
+                                                                                <h4>2 Double Bed</h4>
                                                                             </span>
                                                                         </div>
                                                                     </div>
