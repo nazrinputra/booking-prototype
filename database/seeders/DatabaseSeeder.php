@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
             'password' => Hash::make('password'),
+            'color' => '#3788d8',
         ]);
 
         $category1 = Category::create([

@@ -64,6 +64,7 @@
                             start: '{{ $booking->date->toDateString() }}',
                             description: 'Booked by {{ $booking->user->name }}',
                             url: '{{ route('bookings.edit', $booking) }}',
+                            backgroundColor: '{{ $booking->user->color }}',
                         },
                     @endforeach
                 ],
