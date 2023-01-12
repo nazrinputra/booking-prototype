@@ -32,5 +32,10 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories');
 
 Route::get('/rooms', [RoomController::class, 'index'])->name('rooms');
+Route::get('/rooms/create', [RoomController::class, 'create'])->name('rooms.create');
+Route::post('/rooms', [RoomController::class, 'store'])->name('rooms.store');
+Route::get('/rooms/{room}/edit', [RoomController::class, 'edit'])->name('rooms.edit');
+Route::put('/rooms/{room}', [RoomController::class, 'update'])->name('rooms.update');
+Route::get('/rooms/{room}/delete', [RoomController::class, 'destroy'])->name('rooms.delete');
 
 Route::get('/bookings', [BookingController::class, 'index'])->name('bookings');
