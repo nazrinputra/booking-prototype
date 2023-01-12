@@ -43,7 +43,7 @@
                                         <div class="col-md-6">
                                             <input id="name" type="text"
                                                 class="form-control @error('name') is-invalid @enderror" name="name"
-                                                value="{{ Auth::user()->name }}" required autocomplete="name" readonly>
+                                                value="{{ $booking->user->name }}" required autocomplete="name" readonly>
 
                                             @error('name')
                                                 <span class="invalid-feedback" role="alert">
@@ -61,7 +61,7 @@
                                             <input id="date" type="date"
                                                 class="form-control @error('date') is-invalid @enderror" name="date"
                                                 value="{{ date('Y-m-d', strtotime($booking->date)) }}" required
-                                                autocomplete="date">
+                                                autocomplete="date" @if (Auth::user() && $booking->user->id == Auth::user()->id) @else readonly @endif>
 
                                             @error('date')
                                                 <span class="invalid-feedback" role="alert">
@@ -77,7 +77,8 @@
 
                                         <div class="col-md-6">
                                             <select class="form-control @error('room_id') is-invalid @enderror"
-                                                name="room_id" id="room_id">
+                                                name="room_id" id="room_id"
+                                                @if (Auth::user() && $booking->user->id == Auth::user()->id) @else disabled @endif>
                                                 @foreach ($rooms as $room)
                                                     @if ($booking->room_id == $room->id)
                                                         <option value="{{ $room->id }}" selected='true'>

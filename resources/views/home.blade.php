@@ -53,6 +53,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @if ($rooms->count() == 0)
+                                            <tr>
+                                                <td colspan="5" class="text-center">No room created by you</td>
+                                            </tr>
+                                        @endif
                                         @foreach ($rooms as $index => $room)
                                             <tr>
                                                 <th scope="row">{{ $index + 1 }}</th>

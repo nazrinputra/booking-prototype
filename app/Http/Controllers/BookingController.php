@@ -39,6 +39,10 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
+        if (!Auth::check()) {
+            return redirect()->route('login')->with('danger', 'You must login to continue');
+        }
+
         $reserved = Booking::where('date', $request->get('date'))->where('room_id', $request->get('room_id'))->first();
         if ($reserved) {
             return redirect()->back()->with('danger', 'Room was reserved on that date');
@@ -98,7 +102,7 @@ class BookingController extends Controller
             ]);
         }
 
-        return redirect()->back()->with('success', 'Booking updated');
+        return redirect()->route('bookings')->with('success', 'Booking updated');
     }
 
     /**

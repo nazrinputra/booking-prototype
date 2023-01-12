@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Room;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -27,7 +28,7 @@ class HomeController extends Controller
     {
         return view('home', [
             'categories' => Category::all(),
-            'rooms' => Room::all(),
+            'rooms' => Auth::user()->rooms,
         ]);
     }
 }
