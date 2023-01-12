@@ -16,7 +16,8 @@
                             <div class="row">
                                 <div class="col-lg-4 align-self-center">
                                     <fieldset>
-                                        <input placeholder="Date" type="date" id="example" class="form-control">
+                                        <input placeholder="Date" type="date" id="example" value="{{ date('Y-m-d') }}"
+                                            class="form-control">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-4 align-self-center">
@@ -24,16 +25,15 @@
                                         <select name="price" class="form-select" aria-label="Default select example"
                                             id="chooseCategory">
                                             <option value="" selected>Choose Room</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
+                                            @foreach ($rooms as $room)
+                                                <option value="{{ $room->id }}">{{ $room->name }}</option>
+                                            @endforeach
                                         </select>
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-4">
                                     <fieldset>
-                                        <button class="main-button"><i class="fa fa-search"></i> Search Now</button>
+                                        <button class="main-button"><i class="fa fa-calendar"></i> Book Now</button>
                                     </fieldset>
                                 </div>
                             </div>

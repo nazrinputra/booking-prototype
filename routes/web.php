@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Room;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -19,7 +20,9 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', [
+        'rooms' => Room::all(),
+    ]);
 })->name('welcome');
 
 Auth::routes();
