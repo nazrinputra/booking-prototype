@@ -6,8 +6,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="top-text header-text">
-                        <h6>Check Out Our Listings</h6>
-                        <h2>Room listings of Different Categories</h2>
+                        <h6>Check Out Our Rooms</h6>
+                        <h2>Rooms of Different Categories</h2>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                                                                                         <div class="main-white-button">
                                                                                             <a href="/contact"><i
                                                                                                     class="fa fa-eye"></i>
-                                                                                                Contact Now</a>
+                                                                                                Book Now</a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>

@@ -51,8 +51,9 @@
                                                                         </div>
                                                                         <div class="col-lg-6">
                                                                             <div class="main-white-button">
-                                                                                <a href="#"><i class="fa fa-plus"></i>
-                                                                                    Check Our Listings</a>
+                                                                                <a href="{{ route('rooms') }}"><i
+                                                                                        class="fa fa-plus"></i>
+                                                                                    Check Our Rooms</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>

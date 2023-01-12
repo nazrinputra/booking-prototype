@@ -65,10 +65,24 @@ class DatabaseSeeder extends Seeder
             'price' => '49.99'
         ]);
 
-        $booking = Booking::create([
+        Booking::create([
             'user_id' => $user->id,
             'room_id' => $room1->id,
             'date' => now(),
+            'remark' => 'Test Booking',
+        ]);
+
+        Booking::create([
+            'user_id' => $user->id,
+            'room_id' => $room2->id,
+            'date' => now()->modify('+1 day'),
+            'remark' => 'Test Booking',
+        ]);
+
+        Booking::create([
+            'user_id' => $user->id,
+            'room_id' => $room3->id,
+            'date' => now()->modify('+2 day'),
             'remark' => 'Test Booking',
         ]);
     }

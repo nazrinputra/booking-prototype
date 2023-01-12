@@ -61,10 +61,11 @@
                             @auth
                                 <li><a href="/home" class="{{ Route::is('home') ? 'active' : '' }}">Home</a></li>
                             @endauth
-                            <li><a href="/category" class="{{ Route::is('category') ? 'active' : '' }}">Category</a>
+                            <li><a href="/categories"
+                                    class="{{ Route::is('categories') ? 'active' : '' }}">Categories</a>
                             </li>
-                            <li><a href="/listing" class="{{ Route::is('listing') ? 'active' : '' }}">Listing</a></li>
-                            <li><a href="/calendar" class="{{ Route::is('calendar') ? 'active' : '' }}">Calendar</a>
+                            <li><a href="/rooms" class="{{ Route::is('rooms') ? 'active' : '' }}">Rooms</a></li>
+                            <li><a href="/bookings" class="{{ Route::is('bookings') ? 'active' : '' }}">Bookings</a>
                             </li>
                             @guest
                                 @if (Route::is('login'))

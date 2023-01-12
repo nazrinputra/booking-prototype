@@ -18,6 +18,10 @@ class Booking extends Model
         'remark',
     ];
 
+    protected $casts = [
+        'date' => 'date',
+    ];
+
     public function room()
     {
         return $this->belongsTo(Room::class);

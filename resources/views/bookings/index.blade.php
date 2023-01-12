@@ -33,13 +33,13 @@
                 initialView: 'dayGridMonth',
                 events: [
                     // my event data
-                    @for ($i = 1; $i <= 3; $i++)
+                    @foreach ($bookings as $booking)
                         {
-                            id: '{{ $i }}',
-                            title: 'my event {{ $i }}',
-                            start: '2023-01-13'
+                            id: '{{ $booking->id }}',
+                            title: '{{ $booking->room->name }}',
+                            start: '{{ $booking->date->toDateString() }}'
                         },
-                    @endfor
+                    @endforeach
                 ],
             });
             calendar.render();

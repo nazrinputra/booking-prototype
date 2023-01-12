@@ -2,6 +2,10 @@
 
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,20 +24,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/category', function () {
-    return view('category', [
-        'categories' => Category::withCount('rooms')->get(),
-    ]);
-})->name('category');
+Route::get('/categories', [CategoryController::class, 'index'])->name('categories');
 
-Route::get('/listing', function () {
-    return view('listing', [
-        'categories' => Category::with('rooms')->get(),
-    ]);
-})->name('listing');
+Route::get('/rooms', [RoomController::class, 'index'])->name('rooms');
 
-Route::get('/calendar', function () {
-    return view('calendar');
-})->name('calendar');
+Route::get('/bookings', [BookingController::class, 'index'])->name('bookings');
