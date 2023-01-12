@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +19,9 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/category', function () {
-    return view('category');
+    return view('category', [
+        'categories' => Category::withCount('rooms')->get(),
+    ]);
 })->name('category');
 
 Route::get('/calendar', function () {
