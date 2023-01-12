@@ -102,9 +102,21 @@
 
                                     <div class="row mb-0">
                                         <div class="col-md-6 offset-md-4">
-                                            <button type="submit" class="btn btn-primary">
-                                                {{ __('Update') }}
-                                            </button>
+                                            <div class="d-flex justify-content-between">
+                                                @if (Auth::user() && $booking->user->id == Auth::user()->id)
+                                                    <button type="submit" class="btn btn-primary">
+                                                        {{ __('Update') }}
+                                                    </button>
+                                                @else
+                                                    <button class="btn btn-primary">
+                                                        <a class="text-white" href="{{ route('bookings') }}">Back</a>
+                                                    </button>
+                                                @endif
+                                                @if (Auth::user() && $booking->user->id == Auth::user()->id)
+                                                    <a class="mt-1 text-danger"
+                                                        href="{{ route('bookings.delete', $booking) }}">Delete booking</a>
+                                                @endif
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
