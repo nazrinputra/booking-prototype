@@ -18,20 +18,22 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::get('/category', function () {
     return view('category', [
         'categories' => Category::withCount('rooms')->get(),
     ]);
 })->name('category');
 
+Route::get('/listing', function () {
+    return view('listing', [
+        'categories' => Category::with('rooms')->get(),
+    ]);
+})->name('listing');
+
 Route::get('/calendar', function () {
     return view('calendar');
 })->name('calendar');
-
-Route::get('/listing', function () {
-    return view('listing');
-})->name('listing');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

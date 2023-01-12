@@ -27,10 +27,7 @@
                                             <div
                                                 class="{{ $index == 0 ? 'first-thumb active' : '' }}{{ $index != 0 && $index != $category->count() - 1 ? 'thumb' : '' }}{{ $index == $category->count() - 1 ? 'last-thumb' : '' }}">
                                                 <div class="thumb">
-                                                    <span class="icon"><img
-                                                            src="assets/images/search-icon-0{{ $index + 1 }}.png"
-                                                            alt="">
-                                                    </span>
+                                                    <p class="text-white">{{ $category->name }}</p>
                                                 </div>
                                             </div>
                                         @endforeach
@@ -48,11 +45,8 @@
                                                                     <div class="row">
                                                                         <div class="col-lg-6">
                                                                             <div class="top-icon">
-                                                                                <span class="icon"><img
-                                                                                        src="assets/images/search-icon-0{{ $index + 1 }}.png"
-                                                                                        alt="">
-                                                                                    <h4>{{ $category->name }}</h4>
-                                                                                </span>
+                                                                                <h4 class="text-white">{{ $category->name }}
+                                                                                </h4>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-lg-6">

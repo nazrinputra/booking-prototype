@@ -27,17 +27,17 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $category1 = Category::create([
-            'name' => 'Test Category 1',
+            'name' => 'Lecture Hall',
             'description' => 'Test Description 1'
         ]);
 
         $category2 = Category::create([
-            'name' => 'Test Category 2',
+            'name' => 'Meeting Room',
             'description' => 'Test Description 2'
         ]);
 
         $category3 = Category::create([
-            'name' => 'Test Category 3',
+            'name' => 'Tutorial Class',
             'description' => 'Test Description 3'
         ]);
 

@@ -1470,7 +1470,7 @@ Category Post
 .category-post {
     overflow: hidden;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .category-post .naccs {
