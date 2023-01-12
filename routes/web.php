@@ -39,3 +39,6 @@ Route::put('/rooms/{room}', [RoomController::class, 'update'])->name('rooms.upda
 Route::get('/rooms/{room}/delete', [RoomController::class, 'destroy'])->name('rooms.delete');
 
 Route::get('/bookings', [BookingController::class, 'index'])->name('bookings');
+Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
+Route::get('/bookings/{booking}/edit', [BookingController::class, 'edit'])->name('bookings.edit');
+Route::put('/bookings/{booking}', [BookingController::class, 'update'])->name('bookings.update');

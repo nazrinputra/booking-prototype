@@ -16,6 +16,17 @@
 
     <div class="contact-page">
         <div class="container">
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @elseif (session('danger'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ session('danger') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner-content p-4">
@@ -34,7 +45,15 @@
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
-                    right: 'dayGridMonth,listWeek'
+                    right: 'dayGridMonth,listWeek',
+                },
+                eventDidMount: function(info) {
+                    $(info.el).tooltip({
+                        title: info.event.extendedProps.description,
+                        placement: "top",
+                        trigger: "hover",
+                        container: "body"
+                    });
                 },
                 events: [
                     // my event data
@@ -42,7 +61,9 @@
                         {
                             id: '{{ $booking->id }}',
                             title: '{{ $booking->room->name }}',
-                            start: '{{ $booking->date->toDateString() }}'
+                            start: '{{ $booking->date->toDateString() }}',
+                            description: 'Booked by {{ $booking->user->name }}',
+                            url: '{{ route('bookings.edit', $booking) }}',
                         },
                     @endforeach
                 ],

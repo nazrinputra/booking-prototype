@@ -6,8 +6,9 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="top-text header-text">
-                        <h6>View/Edit room</h6>
-                        <h2>Display {{ $room->name }}</h2>
+                        <h6>View/Edit booking</h6>
+                        <h2>Display data for {{ date('d/m/Y', strtotime($booking->date)) }} - {{ $booking->room->name }}
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -16,12 +17,23 @@
 
     <div class="contact-page">
         <div class="container">
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @elseif (session('danger'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ session('danger') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
             <div class="row">
                 <div class="col">
                     <div class="inner-content">
                         <div class="row px-5 py-3">
                             <div class="col-lg-12">
-                                <form method="POST" action="{{ route('rooms.update', $room) }}">
+                                <form method="POST" action="{{ route('bookings.update', $booking) }}">
                                     @csrf @method('PUT')
 
                                     <div class="row mb-3">
@@ -31,7 +43,7 @@
                                         <div class="col-md-6">
                                             <input id="name" type="text"
                                                 class="form-control @error('name') is-invalid @enderror" name="name"
-                                                value="{{ $room->name }}" required autocomplete="name" autofocus>
+                                                value="{{ Auth::user()->name }}" required autocomplete="name" readonly>
 
                                             @error('name')
                                                 <span class="invalid-feedback" role="alert">
@@ -42,15 +54,16 @@
                                     </div>
 
                                     <div class="row mb-3">
-                                        <label for="price"
-                                            class="col-md-4 col-form-label text-md-end">{{ __('Price (RM)') }}</label>
+                                        <label for="date"
+                                            class="col-md-4 col-form-label text-md-end">{{ __('Date') }}</label>
 
                                         <div class="col-md-6">
-                                            <input id="price" type="number" step="any"
-                                                class="form-control @error('price') is-invalid @enderror" name="price"
-                                                value="{{ $room->price }}" required autocomplete="price">
+                                            <input id="date" type="date"
+                                                class="form-control @error('date') is-invalid @enderror" name="date"
+                                                value="{{ date('Y-m-d', strtotime($booking->date)) }}" required
+                                                autocomplete="date">
 
-                                            @error('price')
+                                            @error('date')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
@@ -59,43 +72,26 @@
                                     </div>
 
                                     <div class="row mb-3">
-                                        <label for="size"
-                                            class="col-md-4 col-form-label text-md-end">{{ __('Size') }}</label>
+                                        <label for="room_id"
+                                            class="col-md-4 col-form-label text-md-end">{{ __('Room') }}</label>
 
                                         <div class="col-md-6">
-                                            <input id="size" type="size"
-                                                class="form-control @error('size') is-invalid @enderror" name="size"
-                                                value="{{ $room->size }}" required autocomplete="size">
-
-                                            @error('size')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-3">
-                                        <label for="category_id"
-                                            class="col-md-4 col-form-label text-md-end">{{ __('Category') }}</label>
-
-                                        <div class="col-md-6">
-                                            <select class="form-control @error('category_id') is-invalid @enderror"
-                                                name="category_id" id="category_id">
-                                                @foreach ($categories as $category)
-                                                    @if ($room->category_id == $category->id)
-                                                        <option value="{{ $category->id }}" selected="true">
-                                                            {{ $category->name }}
+                                            <select class="form-control @error('room_id') is-invalid @enderror"
+                                                name="room_id" id="room_id">
+                                                @foreach ($rooms as $room)
+                                                    @if ($booking->room_id == $room->id)
+                                                        <option value="{{ $room->id }}" selected='true'>
+                                                            {{ $room->name }}
                                                         </option>
                                                     @else
-                                                        <option value="{{ $category->id }}">
-                                                            {{ $category->name }}
+                                                        <option value="{{ $room->id }}">
+                                                            {{ $room->name }}
                                                         </option>
                                                     @endif
                                                 @endforeach
                                             </select>
 
-                                            @error('category_id')
+                                            @error('room_id')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
