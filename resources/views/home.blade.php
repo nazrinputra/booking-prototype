@@ -27,52 +27,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             @endif
-            <div class="row">
-                <div class="col">
-                    <div class="inner-content">
-                        <div class="row px-5 py-3">
-                            <div class="col">
-                                <div class="mb-3 d-flex justify-content-between">
-                                    <h4 class="mt-1">Categories</h4>
-                                    <button class="btn btn-primary">
-                                        <i class="fa fa-plus-square"></i>
-                                        &nbsp;Add Category
-                                    </button>
-                                </div>
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Description</th>
-                                            <th class="text-center" scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($categories as $index => $category)
-                                            <tr>
-                                                <th scope="row">{{ $index + 1 }}</th>
-                                                <td>{{ $category->name }}</td>
-                                                <td>{{ $category->description }}</td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-primary">
-                                                        <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button class="btn btn-danger">
-                                                        <i class="fa fa-trash"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row mt-3">
+            <div class="row">
                 <div class="col">
                     <div class="inner-content">
                         <div class="row px-5 py-3">
