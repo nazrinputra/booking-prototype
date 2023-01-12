@@ -24,9 +24,9 @@ class Room extends Model
         return $this->belongsToMany(Booking::class);
     }
 
-    public function categories()
+    public function category()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsTo(Category::class);
     }
 
     public function user()

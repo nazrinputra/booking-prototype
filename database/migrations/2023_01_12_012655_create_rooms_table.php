@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('size');
             $table->decimal('price', 9, 2);

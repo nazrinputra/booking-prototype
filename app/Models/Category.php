@@ -17,6 +17,6 @@ class Category extends Model
 
     public function rooms()
     {
-        return $this->belongsToMany(Room::class);
+        return $this->hasMany(Room::class);
     }
 }

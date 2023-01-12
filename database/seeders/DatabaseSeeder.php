@@ -41,18 +41,33 @@ class DatabaseSeeder extends Seeder
             'description' => 'Test Description 3'
         ]);
 
-        $room = Room::create([
+        $room1 = Room::create([
             'user_id' => $user->id,
-            'name' => 'Test Room',
+            'category_id' => $category1->id,
+            'name' => 'Test Lecture Hall',
+            'size' => '1000 sq ft',
+            'price' => '249.99'
+        ]);
+
+        $room2 = Room::create([
+            'user_id' => $user->id,
+            'category_id' => $category2->id,
+            'name' => 'Test Meeting Room',
+            'size' => '500 sq ft',
+            'price' => '149.99'
+        ]);
+
+        $room3 = Room::create([
+            'user_id' => $user->id,
+            'category_id' => $category3->id,
+            'name' => 'Test Tutorial Class',
             'size' => '100 sq ft',
             'price' => '49.99'
         ]);
 
-        $room->categories()->attach([$category1->id, $category2->id, $category3->id]);
-
         $booking = Booking::create([
             'user_id' => $user->id,
-            'room_id' => $room->id,
+            'room_id' => $room1->id,
             'date' => now(),
             'remark' => 'Test Booking',
         ]);
