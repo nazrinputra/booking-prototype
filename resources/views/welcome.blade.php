@@ -36,7 +36,9 @@
                                     <fieldset>
                                         <select name="room_id" class="form-select" id="room_id">
                                             @foreach ($rooms as $room)
-                                                <option value="{{ $room->id }}">{{ $room->name }}</option>
+                                                <option value="{{ $room->id }}"
+                                                    @if (Request::query('room_id') && Request::query('room_id') == $room->id) selected @endif>{{ $room->name }}
+                                                </option>
                                             @endforeach
                                         </select>
                                     </fieldset>

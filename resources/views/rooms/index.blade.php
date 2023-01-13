@@ -51,7 +51,8 @@
                                                                                             alt=""></a>
                                                                                     <div class="hover-content">
                                                                                         <div class="main-white-button">
-                                                                                            <a href="#"><i
+                                                                                            <a
+                                                                                                href="/?room_id={{ $room->id }}"><i
                                                                                                     class="fa fa-eye"></i>
                                                                                                 Book Now</a>
                                                                                         </div>
