@@ -47,14 +47,16 @@ class RoomController extends Controller
             'price' => ['required', 'decimal:0,2', 'max:255'],
             'size' => ['required', 'string', 'max:255'],
             'category_id' => ['required', Rule::exists('categories', 'id')],
+            'image' => ['required', 'string', 'max:255'],
         ]);
 
         Room::create([
             'user_id' => Auth::user()->id,
             'name' => $request->get('name'),
-            'price' => $request->get('size'),
+            'price' => $request->get('price'),
             'size' => $request->get('size'),
             'category_id' => $request->get('category_id'),
+            'image' => $request->get('image'),
         ]);
 
         return redirect()->route('home')->with('success', 'Room created');
@@ -99,6 +101,7 @@ class RoomController extends Controller
             'price' => ['required', 'decimal:0,2', 'max:255'],
             'size' => ['required', 'string', 'max:255'],
             'category_id' => ['required', Rule::exists('categories', 'id')],
+            'image' => ['required', 'string', 'max:255'],
         ]);
 
         $room->update($validated);

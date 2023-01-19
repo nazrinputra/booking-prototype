@@ -103,6 +103,48 @@
                                         </div>
                                     </div>
 
+                                    <div class="row mb-3">
+                                        <label for="image"
+                                            class="col-md-4 col-form-label text-md-end">{{ __('Image') }}</label>
+
+                                        <div class="col-md-6">
+                                            <select class="form-control @error('image') is-invalid @enderror" name="image"
+                                                id="image">
+                                                <option value="BrainstormRoom.png"
+                                                    @if ($room->image == 'BrainstormRoom.png') selected='true' @endif>Brainstorm Room
+                                                </option>
+                                                <option value="CempakaHall.png"
+                                                    @if ($room->image == 'CempakaHall.png') selected='true' @endif>Cempaka Hall
+                                                </option>
+                                                <option value="Classroom.png"
+                                                    @if ($room->image == 'Classroom.png') selected='true' @endif>Classroom 1
+                                                </option>
+                                                <option value="Classroom2.png"
+                                                    @if ($room->image == 'Classroom2.png') selected='true' @endif>Classroom 2
+                                                </option>
+                                                <option value="ClusterClassroom.png"
+                                                    @if ($room->image == 'ClusterClassroom.png') selected='true' @endif>Cluster
+                                                    Classroom
+                                                </option>
+                                                <option value="KembojaHall.png"
+                                                    @if ($room->image == 'KembojaHall.png') selected='true' @endif>Kemboja Hall
+                                                </option>
+                                                <option value="LavendarHall.png"
+                                                    @if ($room->image == 'LavendarHall.png') selected='true' @endif>Lavendar Hall
+                                                </option>
+                                                <option value="MeetingRoom2.png"
+                                                    @if ($room->image == 'MeetingRoom2.png') selected='true' @endif>Meeting Room 2
+                                                </option>
+                                            </select>
+
+                                            @error('image')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+
                                     <div class="row mb-0">
                                         <div class="col-md-6 offset-md-4">
                                             <button type="submit" class="btn btn-primary">

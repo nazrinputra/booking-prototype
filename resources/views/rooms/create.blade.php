@@ -97,6 +97,40 @@
                                         </div>
                                     </div>
 
+                                    <div class="row mb-3">
+                                        <label for="image"
+                                            class="col-md-4 col-form-label text-md-end">{{ __('Image') }}</label>
+
+                                        <div class="col-md-6">
+                                            <select class="form-control @error('image') is-invalid @enderror" name="image"
+                                                id="image">
+                                                <option value="BrainstormRoom.png">Brainstorm Room
+                                                </option>
+                                                <option value="CempakaHall.png">Cempaka Hall
+                                                </option>
+                                                <option value="Classroom.png">Classroom 1
+                                                </option>
+                                                <option value="Classroom2.png">Classroom 2
+                                                </option>
+                                                <option value="ClusterClassroom.png">Cluster
+                                                    Classroom
+                                                </option>
+                                                <option value="KembojaHall.png">Kemboja Hall
+                                                </option>
+                                                <option value="LavendarHall.png">Lavendar Hall
+                                                </option>
+                                                <option value="MeetingRoom2.png">Meeting Room 2
+                                                </option>
+                                            </select>
+
+                                            @error('image')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+
                                     <div class="row mb-0">
                                         <div class="col-md-6 offset-md-4">
                                             <button type="submit" class="btn btn-primary">

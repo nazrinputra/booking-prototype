@@ -47,7 +47,7 @@
                                                                             <div class="listing-item">
                                                                                 <div class="left-image">
                                                                                     <a href="#"><img
-                                                                                            src="assets/images/listing-01.jpg"
+                                                                                            src="assets/images/rooms/{{ $room->image }}"
                                                                                             alt=""></a>
                                                                                     <div class="hover-content">
                                                                                         <div class="main-white-button">
