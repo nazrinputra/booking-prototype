@@ -119,7 +119,7 @@
                                                 </option>
                                                 <option value="LavendarHall.png">Lavendar Hall
                                                 </option>
-                                                <option value="MeetingRoom2.png">Meeting Room 2
+                                                <option value="MeetingRoom2.png">Meeting Room 1
                                                 </option>
                                             </select>
 

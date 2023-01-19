@@ -133,7 +133,7 @@
                                                     @if ($room->image == 'LavendarHall.png') selected='true' @endif>Lavendar Hall
                                                 </option>
                                                 <option value="MeetingRoom2.png"
-                                                    @if ($room->image == 'MeetingRoom2.png') selected='true' @endif>Meeting Room 2
+                                                    @if ($room->image == 'MeetingRoom2.png') selected='true' @endif>Meeting Room 1
                                                 </option>
                                             </select>
 
