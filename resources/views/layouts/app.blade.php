@@ -53,7 +53,7 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="/" class="logo">
+                        <a href="/" class="logo rounded">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -113,24 +113,32 @@
                 <div class="col-lg-6">
                     <div class="about text-center">
                         <div class="logo">
-                            <img src="{{ asset('assets/images/black-logo.png') }}" alt="">
+                            <img src="{{ asset('assets/images/logo.png') }}" alt="">
                         </div>
+                        <p>
+                            25-G, Petaling Utama Avenue, <br />
+                            Jalan PJS 1/50, Taman Petaling Utama, <br />
+                            46150 PJ Selangor.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-us">
                         <div class="text-center">
                             <h4>Contact Us</h4>
-                            <p>Selangor, Malaysia</p>
                             <div>
-                                <a href="#">012-345 6789</a>
+                                <p>Mon-Fri 9.00am - 6.00pm</p>
+
+                                <p>Tel : <a href="#">03-77813300</a><br />
+                                    Fax : <a href="#">03-77813600</a><br />
+                                    Email : <a href="#">enquiry@allspace.com.my</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="sub-footer">
-                        <p>Copyright © {{ date('Y') }} Laravel. All Rights Reserved.</p>
+                        <p>Copyright © {{ date('Y') }} All Space Company. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

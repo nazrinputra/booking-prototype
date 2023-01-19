@@ -341,7 +341,7 @@ header
 }
 
 .header-area .main-nav a.logo {
-    background-image: url(../images/white-logo.png);
+    background-image: url(../images/white-logo-2.png);
     width: 166px;
     height: 58px;
     display: inline-block;
@@ -349,7 +349,7 @@ header
 }
 
 .background-header .main-nav a.logo {
-    background-image: url(../images/black-logo.png);
+    background-image: url(../images/white-logo-2.png);
     width: 164px;
     height: 58px;
     display: inline-block;
@@ -2185,7 +2185,7 @@ responsive
     }
 
     .header-area .main-nav a.logo {
-        background-image: url(../images/black-logo.png);
+        background-image: url(../images/white-logo-2.png);
         float: left;
     }
 
